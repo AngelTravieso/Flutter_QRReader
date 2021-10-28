@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: _HomePageBody(),
+      body: const _HomePageBody(),
       bottomNavigationBar: const CustomNavigationBar(),
       floatingActionButton: const ScanButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -43,13 +43,13 @@ class _HomePageBody extends StatelessWidget {
 
     switch (currentIndex) {
       case 0:
-        return MapsPage();
+        return const MapsPage();
 
       case 1:
-        return DirectoryPage();
+        return const DirectoryPage();
 
       default:
-        return MapsPage();
+        return const MapsPage();
     }
   }
 }
